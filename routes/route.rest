@@ -3,3 +3,13 @@ GET http://127.0.0.1:3001/subscribers
 ###
 
 GET http://127.0.0.1:3001/subscribers/1
+
+###
+
+POST http://127.0.0.1:3001/subscribers
+Content-Type: application/json
+
+{
+    "name": "Wakoli Leon",
+    "subscribedToChannel": "Techcamp Live"
+}

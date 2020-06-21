@@ -35,13 +35,18 @@ router.post('/', async (req, res) => {
 });
 
 // Updating one subscriber
-router.patch('/:id', (req, res) => {
-
+router.patch('/:id', getSubscriber, async(req, res) => {
+    
 });
 
 // Deleting one subscriber
-router.delete('/:id', (req, res) => {
-
+router.delete('/:id', getSubscriber, async(req, res) => {
+    try {
+        await res.subscriber.remove()
+        res.json({ message: 'Deleted Subscriber'})
+    } catch (err) {
+        res.status(500).json({ message: err.message })
+    }
 });
 
 // Middleware function to get subcribers
@@ -50,6 +55,7 @@ async function getSubscriber(req, res, next) {
     let subscriber
     try {
         subscriber = await Subscriber.findById(req.params.id)
+        console.log(subscriber)
         if (subscriber == null) {
             return res.status(404).json({ message: 'Cannot find subscriber' })
         }

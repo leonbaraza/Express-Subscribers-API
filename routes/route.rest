@@ -24,5 +24,5 @@ PATCH  http://127.0.0.1:3001/subscribers/5eeef18d4798c823442b9edf
 Content-Type: application/json
 
 {
-    "name": "Wamachaba Nafula Wakoli"
+    "name": "Wamachaba Nafula"
 }

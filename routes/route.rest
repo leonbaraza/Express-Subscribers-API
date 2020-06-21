@@ -2,7 +2,7 @@ GET http://127.0.0.1:3001/subscribers
 
 ###
 
-GET http://127.0.0.1:3001/subscribers/5eedf148ac82160b4c336ad9
+GET http://127.0.0.1:3001/subscribers/5eeef18d4798c823442b9edf
 
 ###
 
@@ -17,3 +17,12 @@ Content-Type: application/json
 ###
 
 DELETE http://127.0.0.1:3001/subscribers/5eedf148ac82160b4c336ad8
+
+###
+
+PATCH  http://127.0.0.1:3001/subscribers/5eeef18d4798c823442b9edf
+Content-Type: application/json
+
+{
+    "name": "Wamachaba Nafula Wakoli"
+}

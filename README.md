@@ -1,5 +1,5 @@
 # Subscribers REST API
-
+A REST API With Node.js, Express, & MongoDB that covers Creating a new subscriber, Reading all the subscribers, Reading one subscriber by id, Updating an existing subscriber, and Removing/Deleting an existing subscriber.
 ## Concepts Covered:
 
 - Setting up an Express server
